@@ -15,6 +15,7 @@ import Stylesheet from "./Components/Stylesheet";
 import Inline from "./Components/Inline";
 import './appStyles.css'
 import styles from './appStyles.module.css'
+import Form from "./Components/Form";
 
 function App() {
   return (
@@ -62,8 +63,9 @@ function App() {
       {/* <Inline/> */}
 
       {/* <h1 className="error">Error</h1> --This can be used in Inline
-      <h1 className={styles.success}>Success</h1> --This cannot be used in Inline because its a module */}
+      <h1 className={styles.success}>Success</h1> --This cannot be used in Inline because its a Module */}
 
+      <Form/>
     </div>
   )
 }
