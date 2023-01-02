@@ -12,6 +12,9 @@ import ParentComponent from "./Components/ParentComponent";
 import UserGreeting from "./Components/UserGreeting";
 import NameList from "./Components/NameList";
 import Stylesheet from "./Components/Stylesheet";
+import Inline from "./Components/Inline";
+import './appStyles.css'
+import styles from './appStyles.module.css'
 
 function App() {
   return (
@@ -52,8 +55,14 @@ function App() {
 
       {/* <NameList /> */}
 
-      <Stylesheet primary={true}/>
-      <Stylesheet primary={false}/>
+      {/* <Stylesheet primary={true}/> */}
+      {/* <Stylesheet primary={false}/> 
+      ----- If false the color will be black ----- */}
+
+      {/* <Inline/> */}
+
+      {/* <h1 className="error">Error</h1> --This can be used in Inline
+      <h1 className={styles.success}>Success</h1> --This cannot be used in Inline because its a module */}
 
     </div>
   )
