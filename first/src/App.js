@@ -13,8 +13,8 @@ import UserGreeting from "./Components/UserGreeting";
 import NameList from "./Components/NameList";
 import Stylesheet from "./Components/Stylesheet";
 import Inline from "./Components/Inline";
-import './appStyles.css'
-import styles from './appStyles.module.css'
+import "./appStyles.css";
+import styles from "./appStyles.module.css";
 import Form from "./Components/Form";
 import LifecycleA from "./Components/LifecycleA";
 import FragmentDemo from "./Components/FragmentDemo";
@@ -22,69 +22,77 @@ import Table from "./Components/Table";
 import PureComp from "./Components/PureComp";
 import RegComp from "./Components/RegComp";
 import ParentComp from "./Components/ParentComp";
+import { Component } from "react";
 
-function App() {
-  return (
-    <div className="App">
-      
-      {/* <Hello /> */}
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        {/* <Hello /> */}
 
-      {/* 
-      <Greet name="Bruce" heroName="Batman" children="Robin">
+        {/* 
+        <Greet name="Bruce" heroName="Batman" children="Robin">
         <p>This is chidren props</p>
-      </Greet>
-      <Greet name="Clark" heroName="Superman">
+        </Greet>
+        <Greet name="Clark" heroName="Superman">
         <button>Action</button>
-      </Greet>
-      <Greet name="Diana" heroName="Wonder women"></Greet>
+        </Greet>
+        <Greet name="Diana" heroName="Wonder women"></Greet>
 
-      <Welcome  name="Clark" heroName="Superman"/> 
-      */}
+        <Welcome  name="Clark" heroName="Superman"/> 
+        */}
 
-      {/* <Message /> */}
+        {/* <Message /> */}
 
-      {/* <Counter/> */}
+        {/* <Counter/> */}
 
-      {/* <Greet name="Diana" heroName="Wonder women"></Greet> 
-      -----Here this is done to show off Props destruction-----*/}
+        {/* <Greet name="Diana" heroName="Wonder women"></Greet> 
+        -----Here this is done to show off Props destruction-----*/}
 
-      {/* <Welcome name="Bruce" heroName="Batman"></Welcome> 
-      -----Here this is done to show off Props destruction-----*/}
+        {/* <Welcome name="Bruce" heroName="Batman"></Welcome> 
+        -----Here this is done to show off Props destruction-----*/}
 
-      {/*---Evente Handling:---*/}
-      {/* <FunctionClick/> */}
-      {/* <ClassClick/> */}
+        {/*---Evente Handling:---*/}
+        {/* <FunctionClick/> */}
+        {/* <ClassClick/> */}
 
-      {/* <EventBind/> */}
+        {/* <EventBind/> */}
 
-      {/* <ParentComponent/> */}
+        {/* <ParentComponent/> */}
 
-      {/* <UserGreeting/> */}
+        {/* <UserGreeting/> */}
 
-      {/* <NameList /> */}
+        {/* <NameList /> */}
 
-      {/* <Stylesheet primary={true}/> */}
-      {/* <Stylesheet primary={false}/> 
+        {/* <Stylesheet primary={true}/> */}
+        {/* <Stylesheet primary={false}/> 
       ----- If false the color will be black ----- */}
 
-      {/* <Inline/> */}
+        {/* <Inline/> */}
 
-      {/* <h1 className="error">Error</h1> --This can be used in Inline
-      <h1 className={styles.success}>Success</h1> --This cannot be used in Inline because its a Module */}
+        {/* 
+        <h1 className="error">Error</h1> --This can be used in Inline
+        <h1 className={styles.success}>Success</h1> --This cannot be used in Inline because its a Module 
+        */}
 
-      {/* <Form/> */}
+        {/* <Form/> */}
 
-      {/* <LifecycleA/> */}
+        {/* <LifecycleA/> */}
 
-      {/* ---Fragment Component--- */}
-      {/* <FragmentDemo/> */}
-      {/* <Table/> */}
+        {/* ---Fragment Component--- */}
+        {/* <FragmentDemo/> */}
+        {/* <Table/> */}
 
-      {/* ---Pure Component--- */}
-      {/* <ParentComp/> */}
+        {/* ---Pure Component--- */}
+        {/* <ParentComp/> */}
 
-    </div>
-  )
+        {/* ---Memo Component--- */}
+        {/* <ParentComp/> */}
+
+        
+      </div>
+    );
+  }
 }
 
 export default App;
