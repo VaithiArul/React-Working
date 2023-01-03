@@ -23,6 +23,7 @@ import PureComp from "./Components/PureComp";
 import RegComp from "./Components/RegComp";
 import ParentComp from "./Components/ParentComp";
 import { Component } from "react";
+import RefsDemo from "./Components/RefsDemo";
 
 class App extends Component {
   render() {
@@ -89,7 +90,7 @@ class App extends Component {
         {/* ---Memo Component--- */}
         {/* <ParentComp/> */}
 
-        
+        <RefsDemo/>
       </div>
     );
   }
