@@ -24,6 +24,21 @@ import RegComp from "./Components/RegComp";
 import ParentComp from "./Components/ParentComp";
 import { Component } from "react";
 import RefsDemo from "./Components/RefsDemo";
+import FocusInput from "./Components/FocusInput";
+import FRParentInput from "./Components/FRParentInput";
+import PortalDemo from "./Components/PortalDemo";
+import Hero from "./Components/Hero";
+import ErrorBoundary from "./Components/ErrorBoundary";
+import ClickCounter from "./Components/ClickCounter";
+import HoverCounter from "./Components/HoverCounter";
+import ClickCounterTwo from "./ClickCounterTwo";
+import HoverCounterTwo from "./Components/HoverCounterTwo";
+import User from "./Components/User";
+import CounterTwo from "./Components/CounterTwo";
+import ComponentC from "./Components/ComponentC";
+import { UserProvider } from "./Components/userContext";
+
+
 
 class App extends Component {
   render() {
@@ -90,7 +105,53 @@ class App extends Component {
         {/* ---Memo Component--- */}
         {/* <ParentComp/> */}
 
-        <RefsDemo/>
+        {/* <RefsDemo/> */}
+
+        {/* <FocusInput/> */}
+
+        {/* <FRParentInput/> */}
+
+        {/* <PortalDemo/> */}
+
+        {/*
+        <ErrorBoundary>
+        <Hero heroName="Batman"/>
+        </ErrorBoundary>
+        <ErrorBoundary>
+        <Hero heroName="Siperman"/>
+        </ErrorBoundary>
+        <ErrorBoundary>
+        <Hero heroName="Joker"/> 
+        </ErrorBoundary> 
+        */}
+        {/*If you remove Joker it will not show error*/}
+
+        {/* <ClickCounter name = "Vaithi"/>
+        <HoverCounter/> */}
+
+        {/* <ClickCounterTwo/>
+        <HoverCounterTwo/>
+        <User render={ (isLoggedIn) => isLoggedIn ? "Vaithi" : "Guest"}/> */} 
+
+        {/*
+        <CounterTwo 
+          render = {(count, incrementCount) => 
+            <ClickCounterTwo count={count} incrementCount={incrementCount}
+            /> 
+          }
+        />
+        <CounterTwo 
+          render = {(count, incrementCount) => 
+            <HoverCounterTwo count={count} incrementCount={incrementCount}
+            /> 
+          }
+        />
+        */}
+
+        <UserProvider value="Vaithi">
+          <ComponentC/>
+        </UserProvider>
+        
       </div>
     );
   }
